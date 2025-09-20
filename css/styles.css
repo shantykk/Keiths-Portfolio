@@ -8,9 +8,10 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #47413c18;
     font-style: normal;
-    color: #fff;
+    color: #684a497a;
+    background-image: url('../images/your-backround\ image.jpg');
     padding: 1rem 0;
     text-align: evenly space-between;
     position: sticky;
@@ -19,16 +20,22 @@ header {
     font-size: large;
 }
 
+.logo{
+    border-radius: 50%;
+}
+
 header nav ul {
     list-style: none;
+    
     margin: 0;
     padding: 1px
 
 }
 
 header nav ul li {
-    display: inline-block;
+    display: inline-table;
     margin-right: 20px;
+    background-color: #1b0d0d;
 }
 
 header nav ul li:last-child {
@@ -36,11 +43,13 @@ header nav ul li:last-child {
 }
 
 header nav a {
-    color: #ffffff5d;
+    color: #02041479;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s;
-    height: 30px;
+    height: 3px;
+    
+    background-color:none
 }
 
 header nav a:hover {
@@ -51,6 +60,7 @@ header nav a:hover {
     background-image: linear-gradient(to bottom, #f7f7f77e, #fff);
     padding: 5rem 1rem;
     text-align: center;
+    background-image: url('../images/./your-backround\ image.jpg');
 }
 
 #about h1 {
@@ -97,11 +107,13 @@ header nav a:hover {
     width: 50%;
     height: 50%;
     border: #111;
+    border-radius: 0%;
+    
 }
 
 .about-content {
     max-width: 600px;
-    text-align: left;
+    text-align: center;
 }
 
 #skills {
@@ -115,7 +127,7 @@ header nav a:hover {
 }
 
 #skills ul {
-    list-style: none;
+    list-style: center;
     margin: 0;
     padding: 0;
     display: flex;
@@ -224,7 +236,7 @@ header nav a:hover {
 
 footer {
     background: #222;
-    color: #fff;
+    color: #1b0d0d;
     text-align: center;
     padding: 1rem 0;
     font-size: 15px;
@@ -237,7 +249,7 @@ footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
     position: relative;
-    background: url('../premium_photo-1661775756810-82dbd209fc95') no-repeat center center;
+    background-image: url('../images//your-backround\ image.jpg');
     background-size: cover;
     padding: 3rem 0;
     border-radius: 16px;
@@ -253,6 +265,7 @@ footer {
     letter-spacing: 2px;
     opacity: 0;
     animation: fadeInDown 1.2s ease-out forwards;
+    
 }
 
 @keyframes fadeInDown {
