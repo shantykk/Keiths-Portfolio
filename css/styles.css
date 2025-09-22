@@ -8,16 +8,19 @@ body {
 }
 
 header {
-    background-color: #47413c18;
-    font-style: normal;
-    color: #684a497a;
-    background-image: url('../images/your-backround\ image.jpg');
-    padding: 1rem 0;
-    text-align: evenly space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    font-size: large;
+    background-color: #808080; /* Standard grey */
+    /* or try these grey variations: */
+    /* background-color: #666666; Light grey */
+    /* background-color: #999999; Medium grey */
+    /* background-color: #f5f5f5; Very light grey */
+}
+
+nav {
+    background-color: #d7da40bb; /* Same grey as header */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -28,14 +31,14 @@ header nav ul {
     list-style: none;
     
     margin: 0;
-    padding: 1px
+    padding: 0px
 
 }
 
 header nav ul li {
     display: inline-table;
     margin-right: 20px;
-    background-color: #1b0d0d;
+    background-color: #ece5e5;
 }
 
 header nav ul li:last-child {
@@ -88,6 +91,70 @@ header nav a:hover {
     border-radius: 4px;
     transition: background 0.2s;
 }
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Individual hover colors */
+.social-icons a:hover .fa-linkedin-in {
+    color: #0077b5;
+}
+
+.social-icons a:hover .fa-facebook-f {
+    color: #1877f2;
+}
+
+.social-icons a:hover .fa-instagram {
+    color: #e4405f;
+}
+
+.social-icons a:hover .fa-github {
+    color: #333;
+    background-color: white;
+}
+
+
 
 #about button:hover {
     background-color: #ff9800;
